@@ -14,9 +14,9 @@ function List({ initialItems }: ListProps) {
     }, 500);
   };
 
-  const removeFromList = (item: string) => {
+  const removeFromList = (removedItem: string) => {
     setTimeout(() => {
-      setList(state => state.filter(item => item !== item));
+      setList(state => state.filter(item => item != removedItem));
     }, 500)
   };
 
